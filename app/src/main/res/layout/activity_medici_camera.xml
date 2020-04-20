@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Medici.MediciCamera"
+    >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/captureButton"
+        android:layout_width="80.13dp"
+        android:layout_height="80.13dp"
+        android:background="@drawable/camerabutton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="39dp"
+       />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="606dp"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageView
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navigationbarwhite"
+        android:scaleType="centerCrop"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <ImageView
+        android:id="@+id/camera_crosshair"
+        android:layout_width="123.50dp"
+        android:layout_height="74.22dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/camera_crosshair"
+         />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="37.50dp"
+        android:layout_height="37.50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/backbutton_light" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

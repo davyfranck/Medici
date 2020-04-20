@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/painttitle"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/navigationbar"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="9dp"
+        android:textColor="#fffffF"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/hexinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationbar" />
+
+    <ImageView
+        android:id="@+id/navigationbar"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navigationbar"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/colouroriginal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/colouroriginal"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/complimenttitle"
+        tools:layout_editor_absoluteX="150dp" />
+
+    <TextView
+        android:id="@+id/complimenttitle"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="7dp"
+        android:text="Complementary Colour Scheme: "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/colouroriginal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationbar" />
+
+    <ImageView
+        android:id="@+id/colourcompliment"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/colourcompliment"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="586dp" />
+
+    <ImageView
+        android:id="@+id/colouroriginal2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="373dp"
+        android:background="@drawable/colouroriginal"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/triadictitle"
+        app:layout_constraintEnd_toStartOf="@+id/colourtriadic1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tetradictitle" />
+
+    <TextView
+        android:id="@+id/triadictitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="348dp"
+        android:text="Triadic Colour Scheme: "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+
+    <ImageView
+        android:id="@+id/colourtriadic1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="373dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/colourtriadic1"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@+id/triadictitle"
+        app:layout_constraintEnd_toStartOf="@+id/colourtriadic2"
+        app:layout_constraintStart_toEndOf="@+id/colouroriginal2"
+        app:layout_constraintTop_toBottomOf="@+id/tetradictitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/colourtriadic2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="373dp"
+        android:background="@drawable/colourtriadic2"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="470dp" />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="37.50dp"
+        android:layout_height="37.50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/backbutton_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backbutton2"
+        android:layout_width="37.50dp"
+        android:layout_height="37.50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="655dp"
+        android:layout_marginBottom="41dp"
+        android:background="@drawable/backbutton_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/colouroriginal3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="526dp"
+        android:background="@drawable/colouroriginal"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <ImageView
+        android:id="@+id/colourtetradic1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="526dp"
+        android:background="@drawable/colourtetradic1"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+
+    <TextView
+        android:id="@+id/tetradictitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="500dp"
+        android:text="Tetradic Colour Scheme: "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/colouroriginal"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <ImageView
+        android:id="@+id/colourtetradic2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="526dp"
+        android:background="@drawable/colourtetradic2"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="259dp" />
+
+    <ImageView
+        android:id="@+id/colourtetradic3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="526dp"
+        android:background="@drawable/colourtetradic3"
+        android:gravity="center_vertical"
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+
+</RelativeLayout>
